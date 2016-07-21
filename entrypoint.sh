@@ -5,6 +5,8 @@ export PHP_POST_MAX_SIZE=${PHP_POST_MAX_SIZE:-8M}
 export PHP_MEMORY_LIMIT=${PHP_MEMORY_LIMIT:-128M}
 export PHP_MAX_EXECUTION_TIME=${PHP_MAX_EXECUTION_TIME:-300}
 
+mkdir -p /run/apache2
+
 config=$PHPMYADMIN_DIR/config.inc.php
 if [ "`grep NO_SECRET $config`" != "" ]; then
   secret=$(cat /dev/urandom  | uuencode -m - | head -2 | tail -1)

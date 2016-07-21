@@ -1,4 +1,4 @@
-# phpMyAdmin on Alpine 3.2
+# phpMyAdmin on Alpine 3.4
 
 [![docker hub](https://img.shields.io/badge/docker-image-blue.svg?style=flat-square)](https://hub.docker.com/r/splattael/phpmyadmin/)
 [![imagelayers](https://badge.imagelayers.io/splattael/phpmyadmin:latest.svg)](https://imagelayers.io/?images=splattael/phpmyadmin:latest)
@@ -53,8 +53,8 @@ Connect to http://localhost:32768/phpmyadmin
 
 ## Software
 
-* apache2-2.4.16-r0
-* php-apache2-5.6.21-r0
+* apache2-2.4.23-r1
+* php-apache2-5.6.23-r0
 * phpMyAdmin 4.6.3 (from source)
 
 ## Release
